@@ -1,9 +1,5 @@
 <?php
 
-namespace App\Services;
-
-use App\Models\Reservoir;
-
 class ReservoirService
 {
   public function contentTreatment(array $cases): array
@@ -18,5 +14,15 @@ class ReservoirService
     }
 
     return $response;
+  }
+
+  public function smallest(int $leftValue, int $rightValue): int
+  {
+    return $leftValue > $rightValue ? $rightValue : $leftValue;
+  }
+
+  public function biggest(array $array): int
+  {
+    return max($array);
   }
 }

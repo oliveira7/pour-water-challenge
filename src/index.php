@@ -3,7 +3,12 @@ require_once 'router/Router.php';
 
 require_once 'controller/HomeController.php';
 require_once 'controller/ErroController.php';
+
 require_once 'service/TwigService.php';
+require_once 'service/FileService.php';
+require_once 'service/ReservoirService.php';
+
+require_once 'model/Reservoir.php';
 
 require_once '../vendor/autoload.php';
 

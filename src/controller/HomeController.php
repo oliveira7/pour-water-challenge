@@ -18,6 +18,11 @@ class HomeController
 
   public function store()
   {
-    var_dump($_FILES);
+    $fileService = new FileService($_FILES['cases']['tmp_name']);
+    $cases = $fileService->read();
+    $reservoirService = new ReservoirService();
+    $response = $reservoirService->contentTreatment($cases);
+
+    var_dump($response);
   }
 }

@@ -1,12 +1,10 @@
 <?php
 
-namespace App\Services;
-
 class FileService
 {
-  private string $file;
+  private $file;
 
-  function __construct(string $file)
+  function __construct($file)
   {
     $this->file = $file;
   }
