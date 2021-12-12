@@ -1,4 +1,4 @@
-FROM php:8.0.2-fpm
+FROM php:7.2-fpm
 LABEL key="Yuri Oliveira"
 RUN apt-get update && apt-get install -y \
   git \
@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y \
   zip \
   unzip 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-EXPOSE 8000
+COPY . /var/www
 WORKDIR /var/www
-CMD [ "composer install" ]
+
+EXPOSE 8000
