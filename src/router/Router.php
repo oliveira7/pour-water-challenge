@@ -14,7 +14,7 @@ class Router
     if (isset($urlGet['page'])) {
       $controller = ucfirst($urlGet['page'] . 'Controller');
     } else {
-      $controller = 'HomeController';
+      $controller = 'ReservoirController';
     }
 
     if (!class_exists($controller)) {

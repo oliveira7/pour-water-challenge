@@ -1,6 +1,6 @@
 <?php
 
-class HomeController
+class ReservoirController
 {
   public function create()
   {
