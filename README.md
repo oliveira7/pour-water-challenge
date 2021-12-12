@@ -28,9 +28,9 @@
 ## 🤓 Fluxo da aplicação
 
 ## 👷 A fazer
-- [ ] Lógica
-- [ ] Manipular arquivo
+- [x] Lógica
+- [x] Manipular arquivo
 - [x] Frontend simples(form)
-- [ ] Validação e Tratamento de erro
+- [x] Validação e Tratamento de erro
 - [ ] Criar testes(PHPUnit)
 - [x] Dockerizar(Dockerfile e docker-compose)
