@@ -4,7 +4,6 @@ require_once 'router/Router.php';
 require_once 'controller/ReservoirController.php';
 require_once 'controller/ErroController.php';
 
-require_once 'service/TwigService.php';
 require_once 'service/FileService.php';
 require_once 'service/ReservoirService.php';
 

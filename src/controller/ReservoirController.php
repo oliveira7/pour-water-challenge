@@ -19,6 +19,10 @@ class ReservoirController
   public function store()
   {
     try {
+      $loader = new \Twig\Loader\FilesystemLoader('public/view');
+      $twig = new \Twig\Environment($loader);
+      $template = $twig->load('water.html');
+      
       if (empty($_FILES['cases'])) {
         throw new Exception('Arquivo inexistente');
       }
@@ -30,9 +34,9 @@ class ReservoirController
       $fileService = new FileService($_FILES['cases']['tmp_name']);
       $cases = $fileService->read();
       $reservoirService = new ReservoirService();
-      $response = $reservoirService->contentTreatment($cases);
+      $amoutOfWater = $reservoirService->contentTreatment($cases);
 
-      var_dump($response);
+      echo $template->render(['amoutOfWater' => $amoutOfWater]);
     } catch (Exception $e) {
       echo $e->getMessage();
     }
