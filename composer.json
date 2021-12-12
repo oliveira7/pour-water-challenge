@@ -1,0 +1,15 @@
+{
+    "name": "yuri.oliveira/pour-water-challenge",
+    "autoload": {
+        "psr-4": {
+            "src\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Yuri Oliveira",
+            "email": "deoliveirayuri7@yahoo.com"
+        }
+    ],
+    "require": {}
+}
