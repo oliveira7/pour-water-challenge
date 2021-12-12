@@ -11,5 +11,8 @@
             "email": "deoliveirayuri7@yahoo.com"
         }
     ],
-    "require": {}
+    "require": {
+        "jenssegers/blade": "^1.4",
+        "twig/twig": "^3.0"
+    }
 }
