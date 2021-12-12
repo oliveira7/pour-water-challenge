@@ -1,17 +1,24 @@
 <?php
 
+namespace src\controller;
+
+use \service\FileService;
+use \service\ReservoirService;
+use \Twig\Loader\FilesystemLoader;
+use \Twig\Environment;
+
 class ReservoirController
 {
   public function create()
   {
     try {
-      $loader = new \Twig\Loader\FilesystemLoader('public/view');
-      $twig = new \Twig\Environment($loader);
+      $loader = new FilesystemLoader('public/view');
+      $twig = new Environment($loader);
       $template = $twig->load('create.html');
       $content = $template->render();
 
       echo $content;
-    } catch (Exception $e) {
+    } catch (\Exception $e) {
       echo $e->getMessage();
     }
   }
@@ -19,16 +26,16 @@ class ReservoirController
   public function store()
   {
     try {
-      $loader = new \Twig\Loader\FilesystemLoader('public/view');
-      $twig = new \Twig\Environment($loader);
+      $loader = new FilesystemLoader('public/view');
+      $twig = new Environment($loader);
       $template = $twig->load('water.html');
-      
+
       if (empty($_FILES['cases'])) {
-        throw new Exception('Arquivo inexistente');
+        throw new \Exception('Arquivo inexistente');
       }
 
       if ($_FILES['cases']['type'] !== 'text/plain') {
-        throw new Exception('Formato do arquivo inválido');
+        throw new \Exception('Formato do arquivo inválido');
       }
 
       $fileService = new FileService($_FILES['cases']['tmp_name']);
@@ -37,7 +44,7 @@ class ReservoirController
       $amoutOfWater = $reservoirService->contentTreatment($cases);
 
       echo $template->render(['amoutOfWater' => $amoutOfWater]);
-    } catch (Exception $e) {
+    } catch (\Exception $e) {
       echo $e->getMessage();
     }
   }

@@ -19,7 +19,7 @@
 
 ## ✋🏻 Pré-requisitos
 
-- [PHP - v8.0.11](https://www.php.net/downloads)
+- [PHP - v7.2](https://www.php.net/downloads)
 - [Composer - v2.1.8](https://getcomposer.org/download/)
 - [Docker - v20.10.8](https://docs.docker.com/desktop/windows/install/)
 ## 💥 Instalação e execução

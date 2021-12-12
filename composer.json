@@ -11,8 +11,14 @@
             "email": "deoliveirayuri7@yahoo.com"
         }
     ],
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "8.0"
+    },
     "require": {
-        "jenssegers/blade": "^1.4",
-        "twig/twig": "^3.0"
+        "jenssegers/blade": "1.4",
+        "twig/twig": "3.0"
     }
 }
