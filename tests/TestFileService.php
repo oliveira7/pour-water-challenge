@@ -1,9 +1,8 @@
 <?php
 
-use src\service\FileService;
 use PHPUnit\Framework\TestCase;
 
-class FileServiceTest extends TestCase
+class TestFileService extends TestCase
 {
   public function testFileServiceRead()
   {

@@ -1,9 +1,6 @@
 <?php
 
-use src\service\ReservoirService;
-use PHPUnit\Framework\TestCase;
-
-class ReservoirServiceTest extends TestCase
+class ReservoirServiceTest extends PHPUnit\Framework\TestCase
 {
 
   public function testReservoirServiceContentTreatment()
