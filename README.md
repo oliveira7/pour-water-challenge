@@ -32,5 +32,6 @@
 - [x] Manipular arquivo
 - [x] Frontend simples(form)
 - [x] Validação e Tratamento de erro
-- [ ] Criar testes(PHPUnit)
-- [x] Dockerizar(Dockerfile e docker-compose)
+- [x] Criar testes(PHPUnit)
+- [x] Nginx
+- [x] Dockerizar(Dockerfile, docker-compose)

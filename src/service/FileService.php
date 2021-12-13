@@ -1,7 +1,5 @@
 <?php
 
-namespace src\service;
-
 class FileService
 {
   private $file;

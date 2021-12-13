@@ -1,9 +1,5 @@
 <?php
 
-namespace src\controller;
-
-use \service\FileService;
-use \service\ReservoirService;
 use \Twig\Loader\FilesystemLoader;
 use \Twig\Environment;
 

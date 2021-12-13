@@ -1,0 +1,24 @@
+version: '3.8'
+services: 
+  app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    restart: always
+    container_name: pour-water-challenge-app
+    volumes:
+      - ./:/var/www
+
+  nginx:
+    image: nginx:1.19-alpine
+    container_name: pour-water-challenge-nginx
+    restart: always
+    ports:
+      - "8000:80"
+    expose:
+      - 8000
+    volumes:
+      - ./:/var/www
+      - ./docker/nginx:/etc/nginx/conf.d
+    depends_on:
+      - app

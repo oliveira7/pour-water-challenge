@@ -1,11 +1,9 @@
 <?php
 
-namespace src\controller;
-
 class ErroController
 {
   public function index()
   {
-    echo 'Deu bigode!';
+    echo 'Houston, We Have a Problem';
   }
 }

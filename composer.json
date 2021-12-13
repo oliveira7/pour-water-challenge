@@ -2,7 +2,12 @@
     "name": "yuri.oliveira/pour-water-challenge",
     "autoload": {
         "psr-4": {
-            "src\\": "src/"
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
         }
     },
     "authors": [
@@ -18,7 +23,6 @@
         "phpunit/phpunit": "8.0"
     },
     "require": {
-        "jenssegers/blade": "1.4",
         "twig/twig": "3.0"
     }
 }
