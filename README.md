@@ -13,8 +13,8 @@
 ## 🔍 Observações
 - Um arquivo `input.txt` na raíz do projeto, satisfaz a entrada do desafio.
 - Para o front-end foi usado twig(parecido com o blade do laravel) e bootstrap 5.
-- ⚠️(testes quebrados) Para realizar os testes de unidade, basta executar `./vendor/bin/phpunit tests`. 
- 
+- Para realizar os testes de unidade, basta executar `./vendor/bin/phpunit tests`. 
+
 ## 👾 Tecnologias
 - ⚡ PHP - Fast, flexible and pragmatic.
 - 🐳 Docker — Build safer, share wider, run faster
@@ -43,6 +43,6 @@
 - [x] Manipular arquivo
 - [x] Frontend simples(form)
 - [x] Validação e Tratamento de erro
-- [ ] Criar testes(PHPUnit)
+- [x] Criar testes(PHPUnit) ⚠️(Aumentar cobertura de testes) 
 - [x] Nginx
 - [x] Dockerizar(Dockerfile, docker-compose)

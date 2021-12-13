@@ -1,5 +1,6 @@
 <?php
 
+use App\Service\ReservoirService;
 use PHPUnit\Framework\TestCase;
 
 class ReservoirServiceTest extends TestCase
