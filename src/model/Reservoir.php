@@ -1,5 +1,9 @@
 <?php
 
+namespace App\Model;
+
+use App\Service\ReservoirService;
+
 class Reservoir
 {
   private $silhouettes;

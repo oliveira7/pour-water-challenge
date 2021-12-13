@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Router;
+
 class Router
 {
   public function start($urlGet)
@@ -17,10 +19,11 @@ class Router
       $controller = 'ReservoirController';
     }
 
-    if (!class_exists($controller)) {
+    if (!class_exists('App\\Controller\\' . $controller)) {
       $controller = 'ErroController';
       $method = 'index';
     }
+    $controller = 'App\\Controller\\' . $controller;
 
     call_user_func_array(array(new $controller, $method), array());
   }

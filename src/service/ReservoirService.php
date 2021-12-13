@@ -1,5 +1,9 @@
 <?php
 
+namespace App\Service;
+
+use App\Model\Reservoir;
+
 class ReservoirService
 {
   public function contentTreatment(array $cases): array
