@@ -28,6 +28,7 @@
 
 1. Faça um clone desse repositório `git clone https://github.com/oliveira7/pour-water-challenge.git`;
 2. Entre na pasta do projeto;
+3. Rode `composer install`; 
 3. Rode `docker-compose up -d` para subir os containers;
 4. Acesse o `localhost:8000`;
 

@@ -8,8 +8,7 @@ RUN apt-get update && apt-get install -y \
   zip \
   unzip 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-RUN composer update
-
+# RUN composer update
 # COPY /docker/script.sh /var/www/script.sh
 # RUN chmod +x /var/www/script.sh
 # CMD [ "/var/www/script.sh" ]
