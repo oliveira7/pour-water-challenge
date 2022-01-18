@@ -2,7 +2,7 @@
   Aplicação PHP - MVC
 </h1>
 
-<p align="center">Proposta de solução para o desafio do derramamento de água em reservatórios aleatórios atravéz de um arquivo. 
+<p align="center">Proposta de solução para o desafio do derramamento de água em reservatórios aleatórios através de um arquivo. 
 </p>
 
 ## 🧠 Resolução 
